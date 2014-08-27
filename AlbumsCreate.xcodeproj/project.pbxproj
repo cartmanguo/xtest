@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50D8C7E19A3344400F8B70C /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = F50D8C7D19A3344400F8B70C /* Album.m */; };
 		F52660EC199DDA64002DCBB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52660EB199DDA64002DCBB7 /* Foundation.framework */; };
 		F52660EE199DDA64002DCBB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52660ED199DDA64002DCBB7 /* CoreGraphics.framework */; };
 		F52660F0199DDA64002DCBB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52660EF199DDA64002DCBB7 /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		F526610D199DDA67002DCBB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52660EF199DDA64002DCBB7 /* UIKit.framework */; };
 		F5266115199DDA67002DCBB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5266113199DDA67002DCBB7 /* InfoPlist.strings */; };
 		F5266117199DDA67002DCBB7 /* AlbumsCreateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5266116199DDA67002DCBB7 /* AlbumsCreateTests.m */; };
+		F5266122199DEB80002DCBB7 /* AlbumsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5266121199DEB80002DCBB7 /* AlbumsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F50D8C7C19A3344400F8B70C /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		F50D8C7D19A3344400F8B70C /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 		F52660E8199DDA64002DCBB7 /* AlbumsCreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumsCreate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52660EB199DDA64002DCBB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F52660ED199DDA64002DCBB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		F5266112199DDA67002DCBB7 /* AlbumsCreateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlbumsCreateTests-Info.plist"; sourceTree = "<group>"; };
 		F5266114199DDA67002DCBB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F5266116199DDA67002DCBB7 /* AlbumsCreateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumsCreateTests.m; sourceTree = "<group>"; };
+		F5266120199DEB80002DCBB7 /* AlbumsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsManager.h; sourceTree = "<group>"; };
+		F5266121199DEB80002DCBB7 /* AlbumsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				F52660FD199DDA66002DCBB7 /* Main.storyboard */,
 				F5266100199DDA66002DCBB7 /* ViewController.h */,
 				F5266101199DDA66002DCBB7 /* ViewController.m */,
+				F5266120199DEB80002DCBB7 /* AlbumsManager.h */,
+				F5266121199DEB80002DCBB7 /* AlbumsManager.m */,
+				F50D8C7C19A3344400F8B70C /* Album.h */,
+				F50D8C7D19A3344400F8B70C /* Album.m */,
 				F5266103199DDA67002DCBB7 /* Images.xcassets */,
 				F52660F2199DDA64002DCBB7 /* Supporting Files */,
 			);
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Alpha;
 				TargetAttributes = {
+					F52660E7199DDA64002DCBB7 = {
+						DevelopmentTeam = HZ59NGURJ9;
+					};
 					F5266108199DDA67002DCBB7 = {
 						TestTargetID = F52660E7199DDA64002DCBB7;
 					};
@@ -250,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5266102199DDA66002DCBB7 /* ViewController.m in Sources */,
+				F5266122199DEB80002DCBB7 /* AlbumsManager.m in Sources */,
 				F52660FC199DDA66002DCBB7 /* AppDelegate.m in Sources */,
+				F50D8C7E19A3344400F8B70C /* Album.m in Sources */,
 				F52660F8199DDA65002DCBB7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,9 +391,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlbumsCreate/AlbumsCreate-Prefix.pch";
 				INFOPLIST_FILE = "AlbumsCreate/AlbumsCreate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,9 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlbumsCreate/AlbumsCreate-Prefix.pch";
 				INFOPLIST_FILE = "AlbumsCreate/AlbumsCreate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +475,7 @@
 				F526611C199DDA67002DCBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F526611D199DDA67002DCBB7 /* Build configuration list for PBXNativeTarget "AlbumsCreateTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +484,7 @@
 				F526611F199DDA67002DCBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
