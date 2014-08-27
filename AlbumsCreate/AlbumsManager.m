@@ -84,7 +84,7 @@
 {
     Album *deleteAlbum = (Album *)self.total[index];
     NSFileManager *fm = [NSFileManager defaultManager];
-    NSLog(@"rm:%@",deleteAlbum.albumPath);
+    //NSLog(@"rm:%@",deleteAlbum.albumPath);
     [fm removeItemAtPath:deleteAlbum.albumPath error:nil];
     [self.total removeObjectAtIndex:index];
 }
